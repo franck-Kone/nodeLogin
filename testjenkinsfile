@@ -4,10 +4,10 @@ pipeline{
     stages {
 
         stage('Dep install'){
-            agent{ docker { image 'nodejs'} }
+            agent{ docker { image 'node:9.8.0'} }
 
             steps{
-                sh 'npm cache clean'
+                // sh 'npm cache clean'
                 sh 'npm install'
             }
         }

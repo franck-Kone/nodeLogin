@@ -10,11 +10,11 @@ pipeline{
             }
         }
 
-        // stage('package') {
-        //     steps{
-        //         sh 'npm pack' 
-        //     }
-        // }
+        stage('package') {
+            steps{
+                sh 'npm pack' 
+            }
+        }
 
         // stage('upload artifact') {
         //     steps{
